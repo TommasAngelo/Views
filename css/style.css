@@ -747,9 +747,13 @@ body {
     .center_main li {
       margin: 3vw; }
   /* Нижняя часть сайта */
-  .footer_cont {
-    display: flex;
+  .ft_xs {
     width: 100%;
+    height: auto; }
+  .footer_cont {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     max-width: 100%;
     text-align: center;
     align-items: center;
@@ -758,48 +762,47 @@ body {
     margin: 0; }
   .footer_container {
     /* Нижняя часть сайта */
-    display: flex;
+    display: inline-block;
     width: 100%;
-    height: 4vw;
+    height: auto;
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0px 5px 10px 5px black;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center; }
+    border-radius: 5px; }
     .footer_container .foot_cont {
-      display: inline-block;
-      width: 100%; }
-      .footer_container .foot_cont .footerAdress {
-        display: inline-block;
-        font-size: 1vw;
-        margin-left: 2vw; }
-        .footer_container .foot_cont .footerAdress a {
-          color: white; }
-    .footer_container .foot_tel_one {
       display: inline-block;
       width: 100%;
       text-align: left; }
+      .footer_container .foot_cont .footerAdress {
+        display: inline-block;
+        font-size: 2vw;
+        margin-left: 2vw;
+        margin-top: 2vw; }
+    .footer_container .foot_tel_one {
+      display: inline-block;
+      width: 100%;
+      text-align: center; }
       .footer_container .foot_tel_one .footerTel {
         display: inline-block;
-        font-size: 1.5vw; }
+        font-size: 3vw; }
         .footer_container .foot_tel_one .footerTel a {
           color: white; }
     .footer_container .foot_tel_two {
       display: inline-block;
       width: 100%;
-      text-align: left; }
+      text-align: center; }
       .footer_container .foot_tel_two .footerTel {
         display: inline-block;
-        font-size: 1.5vw; }
+        font-size: 3vw; }
         .footer_container .foot_tel_two .footerTel a {
           color: white; }
     .footer_container .foot_by {
       display: inline-block;
       width: 100%;
       text-align: right;
-      padding-right: 3vw; }
+      padding-right: 1vw;
+      margin-bottom: 2vw; }
       .footer_container .foot_by .by {
         display: inline-block; }
         .footer_container .foot_by .by strong {
           color: white;
-          font-size: 1vw; } }
+          font-size: 2vw; } }
