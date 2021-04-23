@@ -83,8 +83,14 @@
   .map_cont .map_ {
     display: inline-block;
     width: 80%;
+    height: 30vw;
     border: solid black 1px;
     box-shadow: 0px 3px 20px 1px black; }
+  .map_cont .yandex_map {
+    height: 30vw; }
+    .map_cont .yandex_map iframe {
+      width: 80%;
+      height: 30vw; }
 
 .grafick_contacts {
   display: inline-block; }
@@ -115,4 +121,7 @@
     display: none; }
   .xs_map {
     width: 100%;
-    margin-top: 5vw; } }
+    margin-top: 5vw; }
+    .xs_map .map_cont .map_ {
+      width: 60vw;
+      height: 80vw; } }
