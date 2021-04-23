@@ -5,10 +5,12 @@
 * {
   color: black;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif; }
 
 a {
   color: black;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none; }
 
 a:visited {
@@ -240,7 +242,6 @@ body {
   height: 10vw; }
 
 .conntakts {
-  text-space-collapse: inherit;
   white-space: nowrap; }
   .conntakts .contacts_tel .conteiner_tel {
     display: inline-block;
