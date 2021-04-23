@@ -1608,8 +1608,6 @@ pre code {
   margin-left: auto;
 }
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
 }
 .row-no-gutters {
   margin-right: 0;
@@ -1669,8 +1667,7 @@ pre code {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+
 }
 .col-xs-1,
 .col-xs-2,
