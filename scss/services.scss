@@ -1,0 +1,424 @@
+﻿/*
+#aside {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border: solid 2px black;
+
+
+
+
+
+    .aside {
+        display: block;
+        margin: 3vw 1vw;
+        text-align: left;
+
+        .aside_container {
+
+            ul {
+
+                li {
+                    font-size: 2.5vw;
+                    font-weight: 500;
+                    line-height: 3.4vw;
+                    padding: 0 1vw;
+
+                    input[type="radio"] {
+                        display: none;
+                    }
+
+                    #tab-btn-1:checked ~ .sub_menu,
+                    #tab-btn-2:checked ~ .sub_menu2,
+                    #tab-btn-3:checked ~ #content-3 {
+                        display: block;
+                    }
+                }
+
+                li:before {
+                    content: '';
+                    width: 3vw;
+                    height: 3vw;
+                    background-size: 100% 100%;
+                    display: inline-block;
+                    margin: 2px 1vw 0 0px;
+                }
+
+                .leftList:nth-child(1):before {
+                    content: '';
+                    background-image: url('../img/icon_services/customer-support.png');
+                }
+
+                .leftList:nth-child(2):before {
+                    content: '';
+                    background-image: url('../img/icon_services/pngwing.com.png');
+                }
+
+                .leftList:nth-child(3):before {
+                    content: '';
+                    background-image: url('../img/icon_services/diagnostic.png');
+                }
+
+                .leftList:nth-child(4):before {
+                    content: '';
+                    background-image: url('../img/icon_services/engine_2.png');
+                }
+
+                .leftList:nth-child(5):before {
+                    content: '';
+                    background-image: url('../img/icon_services/flash.png');
+                }
+
+                .leftList:nth-child(6):before {
+                    content: '';
+                    background-image: url('../img/icon_services/disc-brake.png');
+                }
+
+                .leftList:nth-child(7):before {
+                    content: '';
+                    background-image: url('../img/icon_services/free-icon-suspension-887272.png');
+                }
+
+                .leftList:nth-child(8):before {
+                    content: '';
+                    background-image: url('../img/icon_services/steering-wheel.png');
+                }
+
+                .leftList:nth-child(9):before {
+                    content: '';
+                    background-image: url('../img/icon_services/gearstick.png');
+                }
+
+                .leftList:nth-child(10):before {
+                    content: '';
+                    background-image: url('../img/icon_services/free-icon-muffler-3885414.png');
+                }
+
+                .leftList:nth-child(11):before {
+                    content: '';
+                    background-image: url('../img/icon_services/tire.png');
+                }
+
+                .leftList:nth-child(n):hover {
+                    color: red;
+                    font-weight: 600;
+                    font-size: 2.7vw;
+                    cursor: pointer;
+                    box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
+                    background: rgba(192, 192, 192, 0.5);
+                }
+
+                .sub_menu {
+                    display: none;
+                }
+
+                .leftList:nth-child(n):checked ~ .sub_menu {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+*/
+
+#aside {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+
+    .aside {
+        display: block;
+        margin: 3vw;
+        text-align: left;
+
+        .aside_container {
+            ul {
+                .leftList {
+                    font-weight: 500;
+                    padding: 0 1vw;
+
+                    input[type=radio] {
+                        display: none;
+                    }
+
+                    .int_list {
+                        display: inline-block;
+                        width: 93%;
+                        font-size: 2.2vw;
+                        user-select: none;
+                        margin: 1vw 0;
+                    }
+
+                    input {
+                        width: 100%;
+                    }
+
+
+                    .sub_menu {
+                        display: none;
+                        border-radius: 5px;
+                        box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
+                        background: rgba(192, 192, 192, 0.5);
+                        padding: 0 0 3vw 2vw;
+
+                        .closed {
+                            display: block;
+                            text-align: right;
+                            padding: 1vw 1vw 0 0;
+
+                            button {
+                                display: inline-block;
+                                align-content: center;
+                                justify-content: center;
+                                text-align: center;
+                                margin: 0;
+                                padding: 0;
+                                width: 5vw;
+                                height: 5vw;
+                                border-radius: 50%;
+                                background: rgba(192, 192, 192, 0.5);
+                                transform: rotate(45deg);
+
+                                b {
+                                    display: block;
+                                    text-align: center;
+                                    margin: 0;
+                                    padding: 0;
+                                    font-size: 4.5vw;
+                                    line-height: normal;
+                                    user-select: none;
+                                }
+                            }
+
+                            button:hover {
+                                box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
+                            }
+                        }
+
+
+                        ul {
+                            li {
+                                padding: 0;
+                                font-size: 1.5vw;
+                                line-height: 1.5vw;
+                                user-select: none;
+                            }
+                        }
+                    }
+
+                    input:checked ~ .sub_menu {
+                        display: block;
+                    }
+                }
+
+                .leftList:nth-child(n):hover {
+                    border-radius: 5px;
+                    box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
+                    background: rgba(192, 192, 192, 0.5);
+                }
+
+                .leftList:nth-child(n):hover .int_list {
+                    color: red;
+                    font-size:2.4vw;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+
+                .leftList:nth-child(n):before {
+                    content: '';
+                    width: 2.2vw;
+                    height: 2.2vw;
+                    background-size: 100% 100%;
+                    display: inline-block;
+                    margin: 3px 1vw 0 0px;
+                }
+
+                .leftList:nth-child(1):before {
+                    content: '';
+                    background-image: url('../img/icon_services/customer-support.png');
+                }
+
+                .leftList:nth-child(2):before {
+                    content: '';
+                    background-image: url('../img/icon_services/pngwing.com.png');
+                }
+
+                .leftList:nth-child(3):before {
+                    content: '';
+                    background-image: url('../img/icon_services/diagnostic.png');
+                }
+
+                .leftList:nth-child(4):before {
+                    content: '';
+                    background-image: url('../img/icon_services/engine_2.png');
+                }
+
+                .leftList:nth-child(5):before {
+                    content: '';
+                    background-image: url('../img/icon_services/flash.png');
+                }
+
+                .leftList:nth-child(6):before {
+                    content: '';
+                    background-image: url('../img/icon_services/disc-brake.png');
+                }
+
+                .leftList:nth-child(7):before {
+                    content: '';
+                    background-image: url('../img/icon_services/free-icon-suspension-887272.png');
+                }
+
+                .leftList:nth-child(8):before {
+                    content: '';
+                    background-image: url('../img/icon_services/steering-wheel.png');
+                }
+
+                .leftList:nth-child(9):before {
+                    content: '';
+                    background-image: url('../img/icon_services/gearstick.png');
+                }
+
+                .leftList:nth-child(10):before {
+                    content: '';
+                    background-image: url('../img/icon_services/free-icon-muffler-3885414.png');
+                }
+
+                .leftList:nth-child(11):before {
+                    content: '';
+                    background-image: url('../img/icon_services/tire.png');
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (orientation:portrait){
+
+    #aside {
+        width:100%;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin: 1vw ;
+
+
+        .aside {
+            display: block;
+            margin: 3vw;
+            text-align: left;
+
+            .aside_container {
+                ul {
+                    .leftList {
+                        width:100%;
+                        font-weight: 500;
+                        padding: 0 1vw;
+
+                        input[type=radio] {
+                            display: none;
+                        }
+
+                        .int_list {
+                            display: inline-block;
+                            width: 93%;
+                            font-size: 3.5vw;
+                            user-select: none;
+                            margin: 1vw 0;
+                        }
+
+                        input {
+                            width: 100%;
+                        }
+
+
+                        .sub_menu {
+                            display: none;
+                            border-radius: 5px;
+                            box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
+                            background: rgba(192, 192, 192, 0.5);
+                            padding: 0 0 3vw 2vw;
+
+                            .closed {
+                                display: block;
+                                text-align: right;
+                                padding: 1vw 3vw 0 0;
+
+                                button {
+                                    display: inline-flex;
+                                    align-content: center;
+                                    justify-content: center;
+                                    text-align: center;
+                                    margin: 0;
+                                    padding: 0;
+                                    width: 10vw;
+                                    height: 10vw;
+                                    border-radius: 50%;
+                                    background: none;
+                                    transform: rotate(45deg);
+
+                                    b {
+                                        display: inline-block;
+                                        text-align: center;
+                                        margin: 0;
+                                        padding: 0 ;
+                                        font-size: 10vw;
+                                        line-height: normal;
+                                        user-select: none;
+                                    }
+                                }
+
+                                button:hover {
+                                    background:none;
+                                    box-shadow:none;
+                                }
+                            }
+
+                            .col-xs-6 {
+                                width:100%;
+                                margin-left:1vw;
+                                ul {
+                                    li {
+                                        padding: 0;
+                                        font-size: 3.5vw;
+                                        line-height: 3.5vw;
+                                        user-select: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        input:checked ~ .sub_menu {
+                            display: block;
+                        }
+                    }
+
+                    .leftList:nth-child(n):hover {
+                        border-radius: 5px;
+                        box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
+                        background: rgba(192, 192, 192, 0.5);
+                    }
+
+                    .leftList:nth-child(n):hover .int_list {
+                        color: red;
+                        font-size: 3.5vw;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+
+                    .leftList:nth-child(n):before {
+                        content: '';
+                        width: 3.5vw;
+                        height: 3.5vw;
+                        background-size: 100% 100%;
+                        display: inline-block;
+                        margin: 3px 1vw 0 0px;
+                    }
+                }
+            }
+        }
+    }
+
+}

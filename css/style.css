@@ -364,15 +364,15 @@ body {
     position: absolute;
     z-index: 99;
     background: silver;
-    font-size: 1vw;
+    font-size: 1.5vw;
     padding: 10px 15px 10px 15px;
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 2px 2px 5px 1px black;
-    line-height: 1.3vw; }
+    line-height: 2.5vw; }
   .list_cont_sub li:hover a {
     color: #c00000;
-    font-size: 1.2vw;
+    font-size: 1.7vw;
     font-weight: 600; }
 
 .sub:hover .lists_btn_top {
@@ -454,7 +454,7 @@ body {
 
 .center_main {
   display: inline-block;
-  max-width: 90%;
+  max-width: 100%;
   min-height: 20vw;
   font-size: 2vw;
   background: rgba(192, 192, 192, 0.6);
@@ -462,9 +462,27 @@ body {
   border: 2px solid black;
   box-shadow: 2px 2px 5px 1px black; }
   .center_main ul {
-    margin: 3vw 2vw; }
+    margin: 3vw 1vw; }
   .center_main li {
-    margin: 2vw; }
+    margin: 1vw; }
+    .center_main li div {
+      display: inline-block;
+      width: 2vw;
+      height: 2vw;
+      background: no-repeat;
+      background-size: 100% 100%;
+      backface-visibility: visible;
+      margin-right: 1vw; }
+    .center_main li .img_1 {
+      background-image: url("../img/icon_services/repairing-service.png"); }
+    .center_main li .img_2 {
+      background-image: url("../img/icon_services/pngwing.com.png"); }
+    .center_main li .img_3 {
+      background-image: url("../img/icon_services/tire.png"); }
+    .center_main li .img_4 {
+      background-image: url("../img/icon_services/like_2.png"); }
+    .center_main li .img_5 {
+      background-image: url("../img/icon_services/shopping-cart.png"); }
 
 /* Нижняя часть сайта */
 .footer_one {
@@ -731,6 +749,14 @@ body {
       margin: 3vw 2vw; }
     .center_main li {
       margin: 3vw; }
+      .center_main li div {
+        display: inline-block;
+        width: 4vw;
+        height: 4vw;
+        background: no-repeat;
+        background-size: 100% 100%;
+        backface-visibility: visible;
+        margin-right: 2vw; }
   .footer_one {
     padding-top: 3vw;
     padding-bottom: 3vw; }

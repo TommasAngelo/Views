@@ -5,11 +5,13 @@
 
 * {
     color: black;
-    margin:0px;
+    margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 a {
     color: black;
+    font-family:Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 a:visited {
@@ -42,19 +44,20 @@ body { /* Задний фон */
 }
 .screen {
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 .conteiner_al {
     width: 97vw;
-    height: 10vw;
+    height: 100%;
     border-bottom: solid;
     box-shadow: 0px 3px 20px 1px black;
 }
 .conteiner_all {
     width: 97vw;
-    height: 10vw;
+    height: 100%;
     border-bottom: solid;
     box-shadow: 0px 3px 20px 1px black;
+    
 }
 .row{
     margin:0;
@@ -231,13 +234,12 @@ $NUM_LAYERS: 20;
     height: 10vw;
 }
 .conntakts {
-    text-space-collapse: inherit;
     white-space: nowrap;
 
     .contacts_tel {
         .conteiner_tel {
             display: inline-block;
-            line-height: 2vh;
+            line-height: 2vw;
 
             .img_tel {
                 display: inline-block;
@@ -348,7 +350,7 @@ $NUM_LAYERS: 20;
     width:100%;
     height:3vw;
     border:1px solid black;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .sub, .btn_hd {
@@ -397,19 +399,19 @@ $NUM_LAYERS: 20;
             position: absolute;
             z-index: 99;
             background: rgba(192, 192, 192, 1);
-            font-size: 1vw;
+            font-size: 1.5vw;
             padding: 10px 15px 10px 15px;
             border-radius: 10px;
             border: 2px solid black;
             box-shadow: 2px 2px 5px 1px black;
-            line-height: 1.3vw;
+            line-height: 2.5vw;
         }
 
         cursor: pointer;
 
         li:hover a {
             color: rgb(192, 0, 0);
-            font-size: 1.2vw;
+            font-size: 1.7vw;
             font-weight: 600;
         }
     }
@@ -434,7 +436,7 @@ $NUM_LAYERS: 20;
 
 
 .main_ {
-    min-height: 100vmin;
+    min-height: 100vh;
 
 }
 
@@ -511,66 +513,89 @@ $NUM_LAYERS: 20;
     user-select: none;
 }
 .center_main {
-    display:inline-block;
-    max-width:90%;
+    display: inline-block;
+    max-width: 100%;
     min-height: 20vw;
     font-size: 2vw;
     background: rgba(192, 192, 192, 0.6);
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 2px 2px 5px 1px black;
-    ul{
-        margin:3vw 2vw;
+
+    ul {
+        margin: 3vw 1vw;
     }
-    li{
-         margin:2vw;   }
+
+    li {
+        margin: 1vw;
+
+        div {
+            display: inline-block;
+            width: 2vw;
+            height: 2vw;
+            background: no-repeat;
+            background-size: 100% 100%;
+            backface-visibility: visible;
+            margin-right: 1vw;
+        }
+
+        .img_1 {
+            background-image: url('../img/icon_services/repairing-service.png');
+        }
+
+        .img_2 {
+            background-image: url('../img/icon_services/pngwing.com.png');
+        }
+
+        .img_3 {
+            background-image: url('../img/icon_services/tire.png');
+        }
+
+        .img_4 {
+            background-image: url('../img/icon_services/like_2.png');
+        }
+
+        .img_5 {
+            background-image: url('../img/icon_services/shopping-cart.png');
+        }
+    }
 }
 
 /* Нижняя часть сайта */
 
-.footer_cont {
+
+.footer_one {
     display: flex;
-    width: 100%;
-    max-width: 100%;
-    text-align:center;
     align-items: center;
     justify-content: center;
-    padding:0;
-    margin:0;
-}
-.footer_container { /* Нижняя часть сайта */
-    display: flex;
-    width: 100%;
-    height: 4vw;
+    text-align: center;
     background: rgba(0,0,0,0.8);
     box-shadow: 0px 5px 10px 5px black;
     border-radius: 5px;
-    align-items: center;
-    justify-content: center;
+    padding: 0 1vw;
 
-    .foot_cont {
+
+    .footerAdress {
         display: inline-block;
-        width: 100%;
+        font-size: 1vw;
 
-        .footerAdress {
-            display: inline-block;
-            font-size: 1vw;
-            margin-left: 2vw;
-
-            a {
-                color: white;
-            }
+        a {
+            color: white;
         }
     }
 
-    .foot_tel_one {
-        display: inline-block;
-        width: 100%;
-        text-align: left;
+    .row_footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height:100%;
 
         .footerTel {
             display: inline-block;
             font-size: 1.5vw;
+            margin:1vw;
+            white-space: nowrap;
 
             a {
                 color: white;
@@ -578,36 +603,419 @@ $NUM_LAYERS: 20;
         }
     }
 
-    .foot_tel_two {
-        display: inline-block;
-        width: 100%;
-        text-align: left;
-
-        .footerTel {
-            display: inline-block;
-            font-size: 1.5vw;
-
-            a {
-                color: white;
-            }
-        }
-    }
-
-    .foot_by {
-        display: inline-block;
-        width: 100%;
+    .social_networks {
+        margin: 1vw;
         text-align: right;
-        padding-right:3vw;
-        .by {
-            display: inline-block;
 
-            strong {
-                color: white;
-                font-size: 1vw;
-            }
+        .vk_img {
+            display: inline-block;
+            width: 1.5vw;
+            height: 1.5vw;
+            background-image: url('../img/VK_img.png');
+            background-size: 100% 100%;
+        }
+    }
+
+    .aftor {
+        display: inline-block;
+
+        strong {
+            color: white;
+            font-size: 1vw;
         }
     }
 }
-@media (max-width: 1200px) { /* если ширина меньше 991 */
+
+
+@media screen and (orientation:portrait) {
+    /* Вращающийся куб */
+
+    .logo_xs {
+        display: none;
+    }
+    /* Service Center */
+    .servvice_name_xs {
+        display: block;
+        width: 20%;
+        padding: 3vw 0 0 2vw;
+    }
+
+    .servvice_name {
+        display: block;
+        text-align: center;
+    }
+
+    .contacts_header {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .stage {
+        display: flex;
+        transform-style: preserve-3d;
+        text-align: center;
+    }
+
+
+    .layer {
+        animation: anim_text_xs 5s infinite alternate;
+        transform: rotateY(10deg) rotateX(10deg) translateZ(0);
+    }
+
+
+
+    @keyframes anim_text_xs {
+        100% {
+            transform: rotateY(-1deg) rotateX(-1deg);
+        }
+    }
+    /* Service Center */
+    .header_sx {
+        width: 100%;
+        height: 100%;
+    }
+
+    .servvice_name {
+        display: block;
+        text-align: center;
+        padding: 1vw 0 0 2vw;
+    }
+
+    .contacts_header {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .stage {
+        display: flex;
+        transform-style: preserve-3d;
+        text-align: center;
+    }
+
+
+    .layer {
+        animation: none;
+        animation-fill-mode: forwards;
+        transform: rotateY(0deg) rotateX(0deg) translateZ(0);
+    }
+
+    .layer:after {
+        font: 9vw/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+        content: 'Service\A Center';
+        white-space: pre;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        color: darken(#fff, 4%);
+        letter-spacing: -2px;
+        text-shadow: 4px 0 10px hsla(0, 0%, 0%, .13);
+    }
+    /* Контакты */
+    .anm_tel {
+        transform-style: preserve-3d;
+        text-align: center;
+    }
+
+    .ctn_xs {
+        width: 80%;
+        padding-top: 1.5vw;
+        padding-left: 10vw;
+    }
+
+    .ctn {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 20vw;
+    }
+
+    .conntakts {
+        text-space-collapse: inherit;
+        white-space: nowrap;
+
+        .contacts_tel {
+            .conteiner_tel {
+                display: inline-block;
+                line-height: 6vw;
+
+                .img_tel {
+                    width: 4vw;
+                    height: 4vw;
+                }
+
+                .anim_tel {
+                    font-weight: 600;
+                }
+
+                a {
+                    font-size: 5.5vw;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    /*График Работы*/
+
+    .graf_xs {
+        width: 100%;
+        height: 30vw;
+    }
+
+    .graf {
+        width: 100%;
+        height: 30vw;
+    }
+
+    .grafick {
+        display: flex;
+        width: 90%;
+        height: 100%;
+
+        .grafick_cont {
+
+            .grafic_header {
+                width: 100%;
+                font-size: 6vw;
+            }
+
+            .grafick_time {
+                width: 100%;
+                font-size: 5vw;
+            }
+        }
+    }
+    /* Адресс Шапки*/
+    .adress_xs {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        width: 100%;
+        height: 18vw;
+    }
+
+    .adress {
+        display: flex;
+        width: 100%;
+        height: 18vw;
+
+        &_header {
+            display: inline-block;
+            font-size: 4vw;
+        }
+
+        a:hover {
+            text-shadow: 2px -2px 1px rgba(0,0,0, 0.3);
+        }
+    }
+    /* Список шапки */
+
+
+    %btn_size_xs {
+        width: 100%;
+        height: 8vw;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .xs_menu_row {
+        width: 100%;
+        padding: 1vw 5%;
+        height: 11vw;
+    }
+
+    .xs_menu {
+        width: 33%;
+        margin: 1vw 0 0 0;
+        text-align: center;
+    }
+
+    .sub, .btn_hd {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 2vw;
+    }
+
+    .btn_text {
+        display: inline-block;
+        font-size: 4vw;
+        font-weight: 600;
+    }
+
+    .lists {
+        display: inline-block;
+        width: 100%;
+
+
+        &_btn {
+            @extend %btn_size_xs;
+            background-color: rgba(143, 83, 22, 1);
+            position: relative;
+            box-shadow: 2px 2px 10px 1px black;
+            z-index: 3;
+
+            &_top {
+                @extend %btn_size_xs;
+                background-color: rgba(255, 215, 0, 1);
+                top: -5px;
+                position: relative;
+                text-align: center;
+                transition-duration: 0.5s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                user-select: none;
+            }
+        }
+    }
+
+    .list_cont {
+        &_sub {
+            ul {
+                width: 50vw;
+                top: 9vw;
+                left: 3vw;
+                font-size: 5vw;
+                line-height: 9vw;
+                text-align: left;
+            }
+
+            cursor: pointer;
+
+            li:hover a {
+                font-size: 5.5vw;
+            }
+        }
+    }
+    /* Акции*/
+
+    .img_xs {
+        position: absolute;
+        left: 0;
+    }
+
+    .action_img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .action_cont {
+        display: flex;
+        width: 100%;
+        height: 40vw;
+    }
+
+    .action_main_cont {
+        display: flex;
+        height: 15vw;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .str {
+        font-size: 4.5vw;
+    }
+
+    .action {
+        .action_main {
+
+            .action_text_main {
+                display: inline-block;
+                width: 100%;
+                font-size: 4vw;
+                line-height: 5vw;
+                z-index: 3;
+            }
+
+            .action_text_end {
+                margin-top: 2vw;
+                display: inline-block;
+                width: 100%;
+                font-size: 5vw;
+                color: rgb(255, 8, 0);
+            }
+        }
+    }
+
+
+
+    .center {
+        display: flex;
+        width: 100%;
+        min-height: 50vw;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+        user-select: none;
+    }
+
+    .center_main {
+        display: inline-block;
+        width: 100%;
+        min-height: 50vw;
+        font-size: 5vw;
+        background: rgba(192, 192, 192, 0.6);
+        border-radius: 10px;
+        border: 2px solid black;
+        box-shadow: 2px 2px 5px 1px black;
+
+        ul {
+            margin: 3vw 2vw;
+        }
+
+        li {
+            margin: 3vw;
+
+            div {
+                display: inline-block;
+                width: 4vw;
+                height: 4vw;
+                background: no-repeat;
+                background-size: 100% 100%;
+                backface-visibility: visible;
+                margin-right: 2vw;
+            }
+        }
+    }
+
+
+    .footer_one {
+        padding-top:3vw;
+        padding-bottom:3vw;
+        .footerAdress {
+            font-size: 2.5vw;
+        }
+
+        .row_footer {
+            .footerTel {
+                font-size: 2.5vw;
+            }
+        }
+
+        .social_networks {
+            margin: 2vw;
+            text-align: right;
+            padding-bottom:2vw;
+
+            .vk_img {
+                width: 4vw;
+                height: 4vw;
+            }
+        }
+
+        .aftor {
+            display: inline-block;
+
+            strong {
+                font-size: 2vw;
+            }
+        }
+    }
 
 }

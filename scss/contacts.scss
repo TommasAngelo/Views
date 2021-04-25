@@ -1,0 +1,197 @@
+﻿.row_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.row_contacts_top{
+    margin-top:2vw;
+}
+.img_service {
+    display: inline-block;
+    width: 17.1vw;
+    height: 10.1vw;
+
+    .img_service_conteiner {
+        ._img_service {
+            padding: 1vw;
+            background-image: url('../img/Auto_Servise.jpg');
+            background-size: 100% 100%;
+            width: 17vw;
+            height: 10vw;
+            outline: solid 1px black;
+            box-shadow: 0px 3px 20px 1px black;
+            transition: all 0.5s ease;
+        }
+
+        ._img_service:hover {
+            outline: none;
+            border-radius: 50%;
+            transform: rotate(720deg);
+        }
+    }
+}
+.img_service:hover ._img_service {
+    outline: none;
+    border-radius: 50%;
+    transform: rotate(720deg);
+}
+
+.contacts {
+    display: inline-block;
+
+    .adress_contacts {
+        .adress_contacts_container {
+            font-size: 2.5vw;
+            font-weight: 700;
+        }
+
+        .adress_contacts_container:hover {
+            font-size: 2.7vw;
+        }
+    }
+}
+.telefone {
+    display: inline-block;
+
+    .telefon_container {
+        margin-bottom: 3vw;
+        .tel {
+            line-height: 4vw;
+            padding: 0.1vw 1vw;
+            margin:1vw 0;
+
+            a {
+                font-size: 2vw;
+                font-weight: 800;
+            }
+
+            .img_tel {
+                display: inline-block;
+                background: url('../img/telephone.svg');
+                width: 1.5vw;
+                height: 1.5vw;
+                background-size: 100% 100%;
+                margin-right: 0.5vw;
+            }
+
+            a:hover {
+                font-size: 2.2vw;
+                text-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
+            }
+
+            a:hover .img_tel {
+                animation: anim_phone 0.3s infinite normal;
+            }
+        }
+
+        .tel:hover {
+            box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
+            background: rgba(192, 192, 192, 0.5);
+        }
+
+        .tel:hover a {
+            font-size: 2.2vw;
+        }
+    }
+}
+@keyframes anim_phone {
+    25% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.map_cont {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    .map_ {
+        display: inline-block;
+        width: 80%;
+        height: 30vw;
+        border: solid black 1px;
+        box-shadow: 0px 3px 20px 1px black;
+    }
+
+    .yandex_map {
+        height: 30vw;
+
+        iframe {
+            width: 80%;
+            height: 30vw;
+        }
+    }
+}
+
+.grafick_contacts {
+    display: inline-block;
+
+    .graf_cont {
+        display: inline-block;
+        padding:2vw;
+        background: rgba(192, 192, 192, 0.6);
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px 1px black;
+        user-select: none;
+
+        .grafick2_header {
+            font-size: 2.5vw;
+        }
+
+        .grafick2_time {
+            font-size: 2vw;
+            line-height: 2.5vw;
+        }
+
+        .grafick2 {
+            font-size: 2.2vw;
+
+            span {
+                color: red;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media screen and (orientation:portrait){
+    .xs_service_img{
+        width:30%;
+    }
+    .xs_adress{
+        width:70%;
+    }
+    .xs_contacts{
+        display:none;
+    }
+    .contacts {
+        .adress_contacts {
+            .adress_contacts_container {
+                font-size: 3vw;
+            }
+
+            .adress_contacts_container:hover {
+                font-size: 3.2vw;
+            }
+        }
+    }
+    .xs_map{
+        width:100%;
+        margin-top:5vw;
+        .map_cont{
+            .map_{
+                width:60vw;
+                height:80vw;
+            }
+        }
+        
+    }
+}
