@@ -731,17 +731,21 @@ body {
       margin: 3vw 2vw; }
     .center_main li {
       margin: 3vw; }
-  .footer_one .footerAdress {
-    font-size: 2.5vw; }
-  .footer_one .row_footer .footerTel {
-    font-size: 2.5vw; }
-  .footer_one .social_networks {
-    margin: 2vw;
-    text-align: right; }
-    .footer_one .social_networks .vk_img {
-      width: 4vw;
-      height: 4vw; }
-  .footer_one .aftor {
-    display: inline-block; }
-    .footer_one .aftor strong {
-      font-size: 2vw; } }
+  .footer_one {
+    padding-top: 3vw;
+    padding-bottom: 3vw; }
+    .footer_one .footerAdress {
+      font-size: 2.5vw; }
+    .footer_one .row_footer .footerTel {
+      font-size: 2.5vw; }
+    .footer_one .social_networks {
+      margin: 2vw;
+      text-align: right;
+      padding-bottom: 2vw; }
+      .footer_one .social_networks .vk_img {
+        width: 4vw;
+        height: 4vw; }
+    .footer_one .aftor {
+      display: inline-block; }
+      .footer_one .aftor strong {
+        font-size: 2vw; } }

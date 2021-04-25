@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  width: 100%; }
+  text-align: center; }
 
 .row_contacts_top {
   margin-top: 2vw; }
@@ -119,6 +118,10 @@
     width: 70%; }
   .xs_contacts {
     display: none; }
+  .contacts .adress_contacts .adress_contacts_container {
+    font-size: 3vw; }
+  .contacts .adress_contacts .adress_contacts_container:hover {
+    font-size: 3.2vw; }
   .xs_map {
     width: 100%;
     margin-top: 5vw; }
