@@ -129,35 +129,30 @@
     display: block;
     margin: 3vw;
     text-align: left; }
-    #aside .aside .aside_container ul li {
-      font-size: 2.2vw;
+    #aside .aside .aside_container ul .leftList {
       font-weight: 500;
-      line-height: 3vw;
-      padding: 1vw; }
-      #aside .aside .aside_container ul li input[type=radio] {
+      padding: 0 1vw; }
+      #aside .aside .aside_container ul .leftList input[type=radio] {
         display: none; }
-      #aside .aside .aside_container ul li .int_list {
-        font-size: 2.2vw;
-        user-select: none; }
-      #aside .aside .aside_container ul li input {
-        width: 100%; }
-      #aside .aside .aside_container ul li .int_list:hover {
+      #aside .aside .aside_container ul .leftList .int_list {
         display: inline-block;
-        color: red;
-        font-weight: 600;
-        font-size: 2.5vw;
-        cursor: pointer; }
-      #aside .aside .aside_container ul li .sub_menu {
+        width: 93%;
+        font-size: 2.2vw;
+        user-select: none;
+        margin: 1vw 0; }
+      #aside .aside .aside_container ul .leftList input {
+        width: 100%; }
+      #aside .aside .aside_container ul .leftList .sub_menu {
         display: none;
         border-radius: 5px;
         box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
         background: rgba(192, 192, 192, 0.5);
-        padding: 0 0 3vw 0; }
-        #aside .aside .aside_container ul li .sub_menu .closed {
+        padding: 0 0 3vw 2vw; }
+        #aside .aside .aside_container ul .leftList .sub_menu .closed {
           display: block;
           text-align: right;
           padding: 1vw 1vw 0 0; }
-          #aside .aside .aside_container ul li .sub_menu .closed button {
+          #aside .aside .aside_container ul .leftList .sub_menu .closed button {
             display: inline-block;
             align-content: center;
             justify-content: center;
@@ -169,7 +164,7 @@
             border-radius: 50%;
             background: rgba(192, 192, 192, 0.5);
             transform: rotate(45deg); }
-            #aside .aside .aside_container ul li .sub_menu .closed button b {
+            #aside .aside .aside_container ul .leftList .sub_menu .closed button b {
               display: block;
               text-align: center;
               margin: 0;
@@ -177,19 +172,28 @@
               font-size: 4.5vw;
               line-height: normal;
               user-select: none; }
-          #aside .aside .aside_container ul li .sub_menu .closed button:hover {
+          #aside .aside .aside_container ul .leftList .sub_menu .closed button:hover {
             box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5); }
-        #aside .aside .aside_container ul li .sub_menu ul li {
+        #aside .aside .aside_container ul .leftList .sub_menu ul li {
           padding: 0;
           font-size: 1.5vw;
           line-height: 1.5vw;
           user-select: none; }
-      #aside .aside .aside_container ul li input:checked ~ .sub_menu {
+      #aside .aside .aside_container ul .leftList input:checked ~ .sub_menu {
         display: block; }
-    #aside .aside .aside_container ul li:before {
+    #aside .aside .aside_container ul .leftList:nth-child(n):hover {
+      border-radius: 5px;
+      box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
+      background: rgba(192, 192, 192, 0.5); }
+    #aside .aside .aside_container ul .leftList:nth-child(n):hover .int_list {
+      color: red;
+      font-size: 2.4vw;
+      font-weight: 600;
+      cursor: pointer; }
+    #aside .aside .aside_container ul .leftList:nth-child(n):before {
       content: '';
-      width: 3vw;
-      height: 3vw;
+      width: 2.2vw;
+      height: 2.2vw;
       background-size: 100% 100%;
       display: inline-block;
       margin: 3px 1vw 0 0px; }
@@ -226,11 +230,56 @@
     #aside .aside .aside_container ul .leftList:nth-child(11):before {
       content: '';
       background-image: url("../img/icon_services/tire.png"); }
-    #aside .aside .aside_container ul .leftList:nth-child(n):hover {
-      color: red;
-      font-weight: 600;
-      font-size: 2.5vw;
-      cursor: pointer;
-      border-radius: 5px;
-      box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
-      background: rgba(192, 192, 192, 0.5); }
+
+@media screen and (orientation: portrait) {
+  #aside {
+    width: 100%;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+    text-align: center; }
+    #aside .aside {
+      display: block;
+      margin: 3vw;
+      text-align: left; }
+      #aside .aside .aside_container ul .leftList {
+        font-weight: 500;
+        padding: 0 1vw; }
+        #aside .aside .aside_container ul .leftList .int_list {
+          display: inline-block;
+          width: 93%;
+          font-size: 3.5vw;
+          margin: 2vw 0; }
+        #aside .aside .aside_container ul .leftList input {
+          width: 100%; }
+        #aside .aside .aside_container ul .leftList .sub_menu {
+          display: none;
+          border-radius: 5px;
+          box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
+          background: rgba(192, 192, 192, 0.5);
+          padding: 0 0 3vw 2vw; }
+          #aside .aside .aside_container ul .leftList .sub_menu .col-xs-6 {
+            width: 100%; }
+            #aside .aside .aside_container ul .leftList .sub_menu .col-xs-6 ul li {
+              padding: 0;
+              font-size: 3.3vw;
+              line-height: 3.5vw;
+              user-select: none; }
+        #aside .aside .aside_container ul .leftList input:checked ~ .sub_menu {
+          display: block; }
+      #aside .aside .aside_container ul .leftList:nth-child(n):hover {
+        border-radius: 5px;
+        box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
+        background: rgba(192, 192, 192, 0.5); }
+      #aside .aside .aside_container ul .leftList:nth-child(n):before {
+        content: '';
+        width: 3vw;
+        height: 3vw;
+        background-size: 100% 100%;
+        display: inline-block;
+        margin: 3px 1vw 0 0px; }
+      #aside .aside .aside_container ul .leftList:nth-child(n):hover .int_list {
+        color: red;
+        font-size: 3.5vw;
+        font-weight: 600;
+        cursor: pointer; } }
