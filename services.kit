@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Описание содержимого страницы и ключевые слова одновременно можно указывать на нескольких языках, например, на русском и английском-->
+    <meta name="description" lang="ru" content="Описание содержимого страницы">
+    <meta name="description" lang="en" content="Description">
+    <meta name="keywords" lang="ru" content="Ключевые слова через запятую">
+    <meta name="keywords" lang="en" content="Keywords">
+
+    <!-- Иконка вкладки https://favicon.io/favicon-converter/ -->
+    <link rel="shortcut icon" type="<img/x-icon" href="img/fav/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="js/prefix.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">    -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset_my.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/services.min.css">
+    <title>Service Center</title>
+</head>
+<body>
+    <div class="bg_toning">
+        <div class="row screen">
+            <div class="row"><!-- @import "header.html"--></div>
+            <div class="main_">
+
+                <div class="row">
+
+                    <div class="col-xs-10 col-xs-offset-1" id="aside">
+
+                        <div class="aside">
+                            <div class="aside_container">
+                                <form>
+                                    <ul>
+
+                                        <li class="leftList">
+                                            <input type="radio" name="tab-btn" id="tab-btn-1">
+                                            <label for="tab-btn-1" class="int_list">Техническое обслуживание (ТО)</label>
+
+                                            <div class="sub_menu">
+                                                <div class="closed"><button type="reset"><b>+</b></button></div>
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Замена масла двигателя</li>
+                                                            <li>Замена масла АКПП</li>
+                                                            <li>Замена масла МКПП</li>
+                                                            <li>Замена масла РКПП</li>
+                                                            <li>Замена антифриза</li>
+                                                            <li>Замена тормозной жидкости</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Замена свечей зажигания</li>
+                                                            <li>Замена свечей накаливания</li>
+                                                            <li>Замена воздушного фильтра</li>
+                                                            <li>Замена масляного фильтра</li>
+                                                            <li>Замена топливного фильтра</li>
+                                                            <li>Замена фильтра салона</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="leftList">
+                                            <input type="radio" name="tab-btn" id="tab-btn-2">
+                                            <label for="tab-btn-2" class="int_list">Заправка кондиционеров</label>
+
+                                            <div class="sub_menu">
+                                                <div class="closed"><button type="reset"><b>+</b></button></div>
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Заправка хладагентом</li>
+                                                            <li>Заправка спец.маслом</li>
+                                                            <li>Диагностика системы климат контроля</li>
+                                                            <li>Дезинфекция кондиционера</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Диагностика компрессора</li>
+                                                            <li>Устранение утечек фреона</li>
+                                                            <li>Дезинфекция кондиционера</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="leftList">
+                                            <input type="radio" name="tab-btn" id="tab-btn-3">
+                                            <label for="tab-btn-3" class="int_list">Диагностика автомобиля</label>
+
+                                            <div class="sub_menu">
+                                                <div class="closed"><button type="reset"><b>+</b></button></div>
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Компьютерная диагностика</li>
+                                                            <li>Диагностика двигателя</li>
+                                                            <li>Диагностика электрооборудования</li>
+                                                            <li>Диагностика подвески</li>
+                                                            <li>Диагностика кондиционера</li>
+                                                            <li>Диагностика АКПП</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Диагностика рулевого управления</li>
+                                                            <li>Диагностика топливной системы</li>
+                                                            <li>Диагностика тормозной системы</li>
+                                                            <li>Диагностика МКПП</li>
+                                                            <li>Комплексная диагностика автомобиля</li>
+                                                            <li>Диагностика DSG</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="leftList">
+                                            <input type="radio" name="tab-btn" id="tab-btn-4">
+                                            <label for="tab-btn-4" class="int_list">Двигатель</label>
+
+                                            <div class="sub_menu">
+                                                <div class="closed"><button type="reset"><b>+</b></button></div>
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Замена бензинового двигателя</li>
+                                                            <li>Ремонт бензинового двигателя</li>
+                                                            <li>Замена дизельного двигателя</li>
+                                                            <li>Ремонт дизельного двигателя</li>
+                                                            <li>Замена маслосъемных колпачков</li>
+                                                            <li>Замена поршневых колец</li>
+                                                            <li>Замена поршней</li>
+                                                            <li>Замена прокладки ГБЦ</li>
+                                                            <li>Замена ГБЦ</li>
+                                                            <li>Замена турбины</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Ремонт турбины</li>
+                                                            <li>Замена ТНВД</li>
+                                                            <li>Чистка дроссельной заслонки</li>
+                                                            <li>Чистка клапана ЕГР</li>
+                                                            <li>Замена опоры двигателя</li>
+                                                            <li>Замена сальника коленвала</li>
+                                                            <li>Промывка инжектора</li>
+                                                            <li>Замена ГРМ</li>
+                                                            <li>Замена подшипника первичного вала</li>
+                                                            <li>Замена помпы</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="leftList">
+                                            <input type="radio" name="tab-btn" id="tab-btn-5">
+                                            <label for="tab-btn-5" class="int_list">Диагностика и ремонт электрики</label>
+
+                                            <div class="sub_menu">
+                                                <div class="closed"><button type="reset"><b>+</b></button></div>
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Замена электропроводки</li>
+                                                            <li>Замена генератора автомобиля</li>
+                                                            <li>Замена стартера</li>
+                                                            <li>Ремонт генератора</li>
+                                                            <li>Ремонт стартера</li>
+                                                            <li>Ремонт стеклоподъемника</li>
+                                                            <li>Замена габаритных ламп</li>
+                                                            <li>Замена ламп ближнего света</li>
+                                                            <li>Замена катушки зажигания</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Замена блока предохранителей</li>
+                                                            <li>Замена проводов выского напряжения</li>
+                                                            <li>Ремонт ЭБУ двигателя</li>
+                                                            <li>Ремонт ЭБУ АКПП</li>
+                                                            <li>Замена ЭБУ двигателя</li>
+                                                            <li>Замена ЭБУ АКПП</li>
+                                                            <li>Удаление сигнализации</li>
+                                                            <li>Диагностика ЭБУ</li>
+                                                            <li>Замена датчиков</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="leftList">
+                                            <input type="radio" name="tab-btn" id="tab-btn-6">
+                                            <label for="tab-btn-6" class="int_list">Диагностика и ремонт тормозной системы</label>
+
+                                            <div class="sub_menu">
+                                                <div class="closed"><button type="reset"><b>+</b></button></div>
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Замена тормозных дисков</li>
+                                                            <li>Замена тормозных колодок</li>
+                                                            <li>Замена тормозных шлангов</li>
+                                                            <li>Замена тормозных барабанов</li>
+                                                            <li>Замена датчика ABS</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Замена тормозных цилиндров</li>
+                                                            <li>Замена тормозных суппортов</li>
+                                                            <li>Переборка тормозных суппортов</li>
+                                                            <li>Регулировка стояночного тормоза</li>
+                                                            <li>Замена троса ручного тормоза</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="leftList">
+                                            <input type="radio" name="tab-btn" id="tab-btn-7">
+                                            <label for="tab-btn-7" class="int_list">Диагностика и ремонт подвески</label>
+
+                                            <div class="sub_menu">
+                                                <div class="closed"><button type="reset"><b>+</b></button></div>
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Замена шаровой опоры</li>
+                                                            <li>Замена ступицы</li>
+                                                            <li>Замена ступичного подшипника</li>
+                                                            <li>Замена сайлентблоков рычагов</li>
+                                                            <li>Замена амортизаторов</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Замена пружин</li>
+                                                            <li>Замена сайлентблока задней балки</li>
+                                                            <li>Замена стойки стабилизатора</li>
+                                                            <li>Замена рычагов</li>
+                                                            <li>Замена поворотного кулака</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="leftList">
+                                            <input type="radio" name="tab-btn" id="tab-btn-8">
+                                            <label for="tab-btn-8" class="int_list">Диагностика и ремонт рулевого управления</label>
+
+                                            <div class="sub_menu">
+                                                <div class="closed"><button type="reset"><b>+</b></button></div>
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Ремонт рулевой рейки</li>
+                                                            <li>Замена рулевой рейки</li>
+                                                            <li>Замена насоса гидроусилителя</li>
+                                                            <li>Замена ШРУСа</li>
+                                                            <li>Замена жидкости ГУР</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Ремонт рулевого механизма</li>
+                                                            <li>Замена рулевого наконечника</li>
+                                                            <li>Замена рулевой тяги</li>
+                                                            <li>Замена пыльника ШРУСа</li>
+                                                            <li>Диагностика рулевого управления</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="leftList">
+                                            <input type="radio" name="tab-btn" id="tab-btn-9">
+                                            <label for="tab-btn-9" class="int_list">Диагностика и ремонт трансмисси</label>
+
+                                            <div class="sub_menu">
+                                                <div class="closed"><button type="reset"><b>+</b></button></div>
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Замена МКПП</li>
+                                                            <li>Замена АКПП</li>
+                                                            <li>Замена РКПП</li>
+                                                            <li>Ремонт МКПП</li>
+                                                            <li>Ремонт АКПП</li>
+                                                            <li>Ремонт РКПП</li>
+                                                            <li>Замена DSG</li>
+                                                            <li>Ремонт DSG</li>
+                                                            <li>Замена сцепления</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Замена выжимного подшипника</li>
+                                                            <li>Замена цилиндра сцепления</li>
+                                                            <li>Замена гидротрансформатора</li>
+                                                            <li>Замена карданного вала</li>
+                                                            <li>Ремонт карданного вала</li>
+                                                            <li>Замена раздаточной коробки</li>
+                                                            <li>Ремонт раздаточной коробки</li>
+                                                            <li>Замена редуктора</li>
+                                                            <li>ЗДиагностика КПП</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="leftList">
+                                            <input type="radio" name="tab-btn" id="tab-btn-10">
+                                            <label for="tab-btn-10" class="int_list">Выхлопные системы</label>
+                                        <div class="sub_menu">
+                                            <div class="closed"><button type="reset"><b>+</b></button></div>
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <ul>
+                                                        <li>Удаление катализатора</li>
+                                                        <li>Замена катализатора на пламегаситель</li>
+                                                        <li>Замена катализатора на катализатор</li>
+                                                        <li>Установка пламегасителя</li>
+                                                        <li>Ремонт коллектора</li>
+                                                        <li>Замена впускного коллектора</li>
+                                                        <li>Замена выпускного коллектора</li>
+                                                        <li>Замена прокладки впускного коллектора</li>
+                                                        <li>Замена прокладки выпускного коллектора</li>
+                                                        <li>Замена гофры</li>
+                                                        <li>Ремонт глушителя</li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <ul>
+                                                        <li>Замена глушителя</li>
+                                                        <li>Замена резонатора</li>
+                                                        <li>Установка обманки лямбда-зонда</li>
+                                                        <li>Удаление сажевого фильтра</li>
+                                                        <li>Замена сажевого фильтра</li>
+                                                        <li>Замена прокладки глушителя</li>
+                                                        <li>Замена приемной трубы</li>
+                                                        <li>Замена фланцевого соединения</li>
+                                                        <li>Установка насадок глушителя</li>
+                                                        <li>Тюнинг выхлопной системы</li>
+                                                        <li>Замена креплений глушителя</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </li>
+                                        <li class="leftList">
+                                            <input type="radio" name="tab-btn" id="tab-btn-11">
+                                            <label for="tab-btn-11" class="int_list">Шиномонтаж</label>
+
+                                            <div class="sub_menu">
+                                                <div class="closed"><button type="reset"><b>+</b></button></div>
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Накачка шин</li>
+                                                            <li>Ремонт проколов</li>
+                                                            <li>Сезонный шиномонтаж</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <ul>
+                                                            <li>Бескамерный ремонт</li>
+                                                            <li>Демонтаж и монтаж колес</li>
+                                                            <li>Балансировка колес</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                       
+
+                    </div>
+
+
+
+            </div>
+        </div>
+        <!-- @import "footer.html" -->
+    </div>
+            
+            <!-- jQuery 1.8 or later, 33 KB -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+            <!-- Fotorama from CDNJS, 19 KB -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+            <!-- jQury -->
+            <!-->
+    <script src="js/jQuery_v1.js"></script>
+    <script src="js/jQuery_v3.js"></script>
+    </!-->
+            <!-- bootstrap -->
+            <script src="js/bootstrap_v3.min.js"></script>
+</body>
+</html>
