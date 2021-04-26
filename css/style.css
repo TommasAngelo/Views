@@ -41,6 +41,8 @@ body {
 .bg_toning {
   /* Цвет и прозрачность альфа канала заднего фона */
   background: rgba(192, 192, 192, 0.7);
+  top: 0;
+  right: 0;
   width: 100%;
   min-height: 100vh; }
 

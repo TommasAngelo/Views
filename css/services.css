@@ -1,127 +1,4 @@
-﻿/*
-#aside {
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    border: solid 2px black;
-
-
-
-
-
-    .aside {
-        display: block;
-        margin: 3vw 1vw;
-        text-align: left;
-
-        .aside_container {
-
-            ul {
-
-                li {
-                    font-size: 2.5vw;
-                    font-weight: 500;
-                    line-height: 3.4vw;
-                    padding: 0 1vw;
-
-                    input[type="radio"] {
-                        display: none;
-                    }
-
-                    #tab-btn-1:checked ~ .sub_menu,
-                    #tab-btn-2:checked ~ .sub_menu2,
-                    #tab-btn-3:checked ~ #content-3 {
-                        display: block;
-                    }
-                }
-
-                li:before {
-                    content: '';
-                    width: 3vw;
-                    height: 3vw;
-                    background-size: 100% 100%;
-                    display: inline-block;
-                    margin: 2px 1vw 0 0px;
-                }
-
-                .leftList:nth-child(1):before {
-                    content: '';
-                    background-image: url('../img/icon_services/customer-support.png');
-                }
-
-                .leftList:nth-child(2):before {
-                    content: '';
-                    background-image: url('../img/icon_services/pngwing.com.png');
-                }
-
-                .leftList:nth-child(3):before {
-                    content: '';
-                    background-image: url('../img/icon_services/diagnostic.png');
-                }
-
-                .leftList:nth-child(4):before {
-                    content: '';
-                    background-image: url('../img/icon_services/engine_2.png');
-                }
-
-                .leftList:nth-child(5):before {
-                    content: '';
-                    background-image: url('../img/icon_services/flash.png');
-                }
-
-                .leftList:nth-child(6):before {
-                    content: '';
-                    background-image: url('../img/icon_services/disc-brake.png');
-                }
-
-                .leftList:nth-child(7):before {
-                    content: '';
-                    background-image: url('../img/icon_services/free-icon-suspension-887272.png');
-                }
-
-                .leftList:nth-child(8):before {
-                    content: '';
-                    background-image: url('../img/icon_services/steering-wheel.png');
-                }
-
-                .leftList:nth-child(9):before {
-                    content: '';
-                    background-image: url('../img/icon_services/gearstick.png');
-                }
-
-                .leftList:nth-child(10):before {
-                    content: '';
-                    background-image: url('../img/icon_services/free-icon-muffler-3885414.png');
-                }
-
-                .leftList:nth-child(11):before {
-                    content: '';
-                    background-image: url('../img/icon_services/tire.png');
-                }
-
-                .leftList:nth-child(n):hover {
-                    color: red;
-                    font-weight: 600;
-                    font-size: 2.7vw;
-                    cursor: pointer;
-                    box-shadow: 5px -5px 5px rgba(7, 7, 7, 0.5);
-                    background: rgba(192, 192, 192, 0.5);
-                }
-
-                .sub_menu {
-                    display: none;
-                }
-
-                .leftList:nth-child(n):checked ~ .sub_menu {
-                    display: block;
-                }
-            }
-        }
-    }
-}
-
-*/
-#aside {
+﻿#aside {
   align-content: center;
   justify-content: center;
   text-align: center; }
@@ -237,7 +114,8 @@
     align-content: center;
     justify-content: center;
     text-align: center;
-    margin: 1vw; }
+    margin: 0vw;
+    padding: 1vw; }
     #aside .aside {
       display: block;
       margin: 3vw;
