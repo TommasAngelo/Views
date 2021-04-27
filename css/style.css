@@ -72,11 +72,14 @@ body {
   width: 5vw;
   height: 5vw;
   background: no-repeat;
-  background-size: 100% 100%;
+  background-size: 80% 80%;
+  background-position: 50% 50%;
   backface-visibility: visible;
-  background-image: url("../img/Logo.jpg");
-  border: 1px solid;
-  box-shadow: 0px 0px 1px 1px black; }
+  background-image: url("../img/fav/android-chrome-512x512.png");
+  background-color: gold;
+  border-radius: 0px;
+  border: 2px solid;
+  box-shadow: 0px 0px 10px 1px white; }
 
 @keyframes ani {
   to {
@@ -101,8 +104,7 @@ body {
   perspective: 0px;
   perspective-origin: center; }
   .cube .face1 {
-    transform: translateZ(2.5vw);
-    background-color: antiquewhite; }
+    transform: translateZ(2.5vw); }
   .cube .face2 {
     transform: rotateY(-180deg) translateZ(2.5vw); }
   .cube .face3 {
@@ -536,7 +538,8 @@ body {
   /* Service Center */
   .servvice_name_xs {
     display: block;
-    width: 20%;
+    width: 35%;
+    height: 20vw;
     padding: 3vw 0 0 2vw; }
   .servvice_name {
     display: block;
@@ -589,9 +592,9 @@ body {
     transform-style: preserve-3d;
     text-align: center; }
   .ctn_xs {
-    width: 80%;
+    width: 60%;
     padding-top: 1.5vw;
-    padding-left: 10vw; }
+    padding-left: 0vw; }
   .ctn {
     display: flex;
     width: 100%;
